@@ -151,9 +151,9 @@
       <!-- End reddit Icon -->
 
 
-      <!-- Start tiktok Icon -->
-      <div id="tiktok" onclick="navigate(this.id)" class="social tiktok">
-        <span class="icon"><i class="fab fa-tiktok"></i></span>
+      <!-- Start homeassistant Icon -->
+      <div id="homeassistant" onclick="navigate(this.id)" class="social homeassistant">
+        <span class="icon"><i class="fab fa-house"></i></span>
       </div>
       <!-- End tiktok Icon -->
 
@@ -162,18 +162,6 @@
         <span class="icon"><i class="fab fa-youtube"></i></span>
       </div>
       <!-- End youtube Icon -->
-
-      <!-- Start pinterest Icon -->
-      <div id="pinterest" onclick="navigate(this.id)" class="social pinterest">
-        <span class="icon"><i class="fab fa-pinterest"></i></span>
-      </div>
-      <!-- End pinterest Icon -->
-
-      <!-- Start telegram Icon -->
-      <div id="telegram" onclick="navigate(this.id)" class="social telegram">
-        <span class="icon telegram"><i class="fab fa-telegram"></i></span>
-      </div>
-      <!-- End telegram Icon -->
 
     </div>
 
@@ -188,6 +176,10 @@
         if (id === "blog")
           window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
 
+        else if (id === "moxfield") {
+          window.open("https://www.moxfield.com/", '_blank').focus();
+        }
+          
         else if (id === "email") {
           window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
         }
@@ -207,17 +199,14 @@
         else if (id === "reddit") {
           window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
         }
-        else if (id === "tiktok") {
-          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
-        }
         else if (id === "youtube") {
           window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
         }
         else if (id === "pinterest") {
           window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
         }
-        else if (id === "telegram") {
-          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        else if (id === "homeassistant") {
+          window.open("http://68.47.219.77:8123/lovelace/0", '_blank').focus();
         }
       }
 
